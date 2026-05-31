@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Aether Student Terminal
 
-## Getting Started
+A futuristic, animated Student Dashboard built with Next.js App Router, Supabase, Tailwind CSS, Framer Motion, and Lucide React.
 
-First, run the development server:
+Features
 
-```bash
+- Dark Mode Bento Grid Dashboard
+- Responsive Sidebar Navigation
+- Dynamic Course Cards
+- Animated Progress Bars
+- Framer Motion Micro-interactions
+- Activity Analytics Section
+- Loading Skeletons
+- Mobile, Tablet, and Desktop Responsive Layout
+- Supabase Integration
+- Dynamic Lucide Icons
+
+Tech Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Supabase
+- Lucide React
+
+Architecture
+
+Server Components
+
+Course data is fetched from Supabase using Next.js Server Components to reduce client-side JavaScript and improve performance.
+
+Client Components
+
+Interactive UI elements such as:
+
+- Sidebar Navigation
+- Course Card Animations
+- Progress Bar Animations
+- Hover Effects
+
+are implemented as Client Components using Framer Motion.
+
+Loading States
+
+A custom loading.tsx file provides animated skeleton placeholders while data is loading.
+
+Responsive Design
+
+Desktop (>1024px)
+
+- Full sidebar visible
+- 3-column Bento layout
+
+Tablet (768px–1024px)
+
+- Sidebar collapses to icons only
+- 2-column Bento layout
+
+Mobile (<768px)
+
+- Bottom navigation
+- Single-column layout
+
+Environment Variables
+
+Create a ".env.local" file:
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+Installation
+
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application is deployed using Vercel.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Challenges Faced
 
-## Learn More
+- Maintaining zero layout shifts during animations
+- Creating reusable Bento Grid components
+- Dynamically rendering Lucide icons from database values
+- Building responsive navigation for all screen sizes
 
-To learn more about Next.js, take a look at the following resources:
+Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Akeel
